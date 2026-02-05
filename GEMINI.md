@@ -369,6 +369,7 @@ This demo showcases Antigravity's ability to:
 ## Repository Information
 
 - **Repository Name**: `spring-boot-modernization`
+- **Repository URL**: `https://github.com/agylabs/spring-boot-modernization`
 - **Organization**: `agylabs`
 - **Visibility**: Public
 - **License**: Apache 2.0 (same as Spring Petclinic)
@@ -394,6 +395,30 @@ spring-boot-modernization/
     ├── compare-versions.sh
     └── run-tests.sh
 ```
+
+---
+
+## Development Workflow
+
+To ensure a clean and manageable project history, all contributors must follow these version control best practices:
+
+### 1. Branching Strategy
+- **Never commit directly to the `main` branch.**
+- Create a new feature or fix branch for every change: `git checkout -b feature/your-feature-name` or `git checkout -b fix/bug-description`.
+- Merge changes into `main` only via Pull Requests after verification.
+
+### 2. Commit Practices
+- **Make frequent, atomic commits.** Small commits are easier to review and revert if necessary.
+- Write clear, descriptive commit messages (e.g., "Refactor: Migrate javax.persistence to jakarta.persistence").
+- Use the imperative mood in commit subjects (e.g., "Add..." instead of "Added...").
+
+### 3. Verification
+- Run tests and linting locally before pushing your branch.
+- Ensure the project builds successfully after every major change.
+
+### 4. Synchronization
+- Regularly pull the latest changes from `main` into your feature branch to resolve conflicts early.
+- Use `git rebase main` on your feature branch to keep a linear history before merging.
 
 ---
 
